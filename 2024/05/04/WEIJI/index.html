@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="单选1.在8086&#x2F;8088 CPU中，一个最基本的总线读写周期由（  ）(1)时钟周期（T状态）组成，在T1状态，CPU往总线上发（   ）(2)信息。 (1) A.   1个     B. 2个     C.   4个     D. 5个 (2) A.   数据     B. 地址     C.   状态     D. 其它  C  B 一个最基本的总线周期由4个时钟周期组成：用T1">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/2024/05/04/WEIJI/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="单选1.在8086&#x2F;8088 CPU中，一个最基本的总线读写周期由（  ）(1)时钟周期（T状态）组成，在T1状态，CPU往总线上发（   ）(2)信息。 (1) A.   1个     B. 2个     C.   4个     D. 5个 (2) A.   数据     B. 地址     C.   状态     D. 其它  C  B 一个最基本的总线周期由4个时钟周期组成：用T1">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://image.xiaobeo.top/img/202303291402773.png">
+<meta property="article:published_time" content="2024-05-04T05:28:05.099Z">
+<meta property="article:modified_time" content="2023-06-14T04:38:41.000Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://image.xiaobeo.top/img/202303291402773.png">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<meta name="generator" content="Hexo 7.2.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-WEIJI" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2024/05/04/WEIJI/" class="article-date">
+  <time class="dt-published" datetime="2024-05-04T05:28:05.099Z" itemprop="datePublished">2024-05-04</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="单选"><a href="#单选" class="headerlink" title="单选"></a>单选</h1><p>1.在8086&#x2F;8088 CPU中，一个最基本的总线读写周期由（  ）(1)时钟周期（T状态）组成，在T1状态，CPU往总线上发（   ）(2)信息。</p>
+<p>(1) A.   1个     B. 2个     C.   4个     D. 5个</p>
+<p>(2) A.   数据     B. 地址     C.   状态     D. 其它</p>
+<blockquote>
+<p>C  B</p>
+<p>一个最基本的总线周期由4个时钟周期组成：用T1 ,T2, T3和T4 表示。处在这些基本时钟周期中的总线状态称为T状态。</p>
+<p>T<del>1</del>：CPU往多路复用总线上发送地址信息，选中所要寻址的存储单元或外设端口地址。</p>
+<p>T<del>2</del>:   CPU从总线上撤销地址，并使总线的低16位浮置成高阻状态，为传送数据做准备。</p>
+<p>T<del>3</del>:   总线的高4位继续提供状态信息，低16位将出现由CPU写出的数据，或CPU从存储器或外设端口读入的数据。</p>
+<p>T<del>4</del>: 调整CPU内部状态，总线周期结束。</p>
+<p>有些情况下，I&#x2F;O或M不能及时配合CPU传送数据，在T<del>3</del>状态启动之前它会通过READY引脚向CPU发一个“未准备好”信号。CPU在T<del>3</del>状态之后自动插入一个时钟周期Tw。READY在Tw中间被再次采样，以确定下一状态是Tw还是T4。</p>
+<p>插入多少个TW取决于<strong>READY 电平维持的时间。</strong></p>
+</blockquote>
+<ol start="2">
+<li>8086 系统中内存储器地址空间为1M，而在进行I&#x2F;O读写时，有效的地址线是(  )。</li>
+</ol>
+<p>A. 高16位 B. 低16位  C. 高8位         D. 低8位</p>
+<blockquote>
+<p>B</p>
+<p>8086 CPU对奇数存储体的选择信号是$\overline{BHE}$&#x3D;0,对偶数存储体的选择信号是A0&#x3D;0。低 16 位地址用于指定 I&#x2F;O 端口地址，高 4 位地址用于指定 I&#x2F;O 设备的编号。因此，对于 I&#x2F;O 操作，只有低 16 位A<del>0</del> ~ A<del>15</del>地址是有效的。</p>
+</blockquote>
+<ol start="3">
+<li>8086系统中，指令MOV AX, [BP]中源操作数所在的缺省段是（  ）段基址。</li>
+</ol>
+<p>A. 数据段  B. 附加段  C. 堆栈段         D. 代码段</p>
+<blockquote>
+<p>C</p>
+</blockquote>
+<ol start="4">
+<li><p>8086 CPU向I&#x2F;O端口地址2FFH写字数据应使用指令（   ）。</p>
+<p>A. IN 2FFH，AX     B. OUT 2FFH，AX</p>
+<p>C. MOV DX，2FFH     D. MOV DX，2FFH</p>
+<p>IN DX，AX        OUT DX，AX</p>
+</li>
+</ol>
+<blockquote>
+<p>D</p>
+</blockquote>
+<ol start="5">
+<li><p>有一个实时数据采集系统，要求10ms进行一次数据采集，然后进行数据处理及显示输出，应采用的数据传送方式为（  ）。</p>
+<p>A. 中断方式       B. 查询方式</p>
+<p>C. 无条件传送方式    D. 直接存储器存取方式</p>
+</li>
+</ol>
+<blockquote>
+<p>A</p>
+</blockquote>
+<ol start="6">
+<li>并行接口芯片8255A具有双向数据传送功能的端口是（  ）。</li>
+</ol>
+<p> A. PA口   B. PB口   C. PC口   D. 控制口</p>
+<blockquote>
+<p>A</p>
+</blockquote>
+<ol start="7">
+<li>用减法指令对两个补码表示的常数C7H（被减数）和6BH（减数）进行减法运算后，进位位CF，符号位SF，溢出位OF分别为（  ）。</li>
+</ol>
+<p> A. 1, 0, 0      B.  0, 0, 1  C.  0, 1, 0      D.  0, 0, 0</p>
+<blockquote>
+<p>B</p>
+</blockquote>
+<ol start="8">
+<li><p>8088&#x2F;8086CPU在响应8259的中断过程中，连续执行两个INTA中断响应周期，第二个中断响应周期是（  )。</p>
+<p>A.  读取8259中OCW3的内容  B.  读取8259中断屏蔽寄存器的内容</p>
+<p>C. 读取中断类型码     D. 清除中断申请寄存器IRRi</p>
+</li>
+</ol>
+<blockquote>
+<p>C</p>
+</blockquote>
+<ol start="9">
+<li>下列说法正确的是（   ）</li>
+</ol>
+<p>   A.  8086 CPU有1M字节地址空间，其中最低64K是IO地址空间。</p>
+<p>   B.  8086 CPU有16位数据线和20位地址线，因此能访问2M字节存储器。</p>
+<p>   C.  8086 CPU在传送8位数据时，总是使用数据总线低8位。</p>
+<p> D.  8086 CPU的NMI和INTR都是中断请求输入信号。</p>
+<blockquote>
+<p>D</p>
+</blockquote>
+<ol start="10">
+<li>在8086宏汇编过程中不会产生指令码，只用来指示汇编程序如何汇编的指令是(  )。</li>
+</ol>
+<p>   A. 汇编指令  B. 伪指令  C. 机器指令 D. 宏指令</p>
+<blockquote>
+<p>B</p>
+</blockquote>
+<h1 id="简答"><a href="#简答" class="headerlink" title="简答"></a>简答</h1><ol>
+<li>什么叫中断向量？它放在那里？对应于1CH的中断向量存放在哪里？如果1CH的中断服务子程序从5110H:2030H开始，则中断向量应怎样存放？</li>
+</ol>
+<p>答：1. &#x3D;&#x3D;中断处理子程序的入口地址就是中断向量&#x3D;&#x3D;。</p>
+<ol start="2">
+<li><p>&#x3D;&#x3D;中断向量放在0段的0~3FFH区域的中断向量表中&#x3D;&#x3D;。</p>
+</li>
+<li><p>对应于类型号为1CH的中断向量应放在00070~00073H的4个单元中。</p>
+<blockquote>
+<p>中断向量是由中断号（0-255）乘以4所得到的内存地址</p>
+</blockquote>
+</li>
+</ol>
+<p>4.若1CH的中断向量为5110H:2030H，则中断向量的存放方法为：00070H存放30H，00071H存放20H(IP)；00072H存放10H，00073H存放51H (CS)。</p>
+<ol start="2">
+<li>已知SP&#x3D;0100H，SS&#x3D;3500H，CS&#x3D;9000H，IP&#x3D;0200H，[00020H]&#x3D;7FH，[00021H]&#x3D;1AH，[00022H]&#x3D;07H，[00023H]&#x3D;6CH，在地址为90200H开始的连续两个内存单元中存放着一条两字节指令&#x3D;&#x3D;INT 8&#x3D;&#x3D;。试指出在执行该指令并进入相应的中断子程序时，&#x3D;&#x3D;SP、SS、IP、CS寄存器的内容以及SP所指向的字单元的内容&#x3D;&#x3D;。</li>
+</ol>
+<p>答：CPU在响应中断请求时首先要进行&#x3D;&#x3D;断点保护，即栈顶指针减6，而SS的内容不变&#x3D;&#x3D;。INT指令是一条两字节指令，故其下一条指令的IP&#x3D;0200H+2&#x3D;0202H。</p>
+<p>&#x3D;&#x3D;8×4&#x3D;0020H&#x3D;&#x3D;，所以在进入相应的中断子程序后，以上各寄存器的内容分别为：</p>
+<p>SP&#x3D;00FAH   SS&#x3D;3500H  IP&#x3D;1A7FH</p>
+<p>CS&#x3D;6C07H   [SP]&#x3D;0202H</p>
+<ol start="3">
+<li>若要求8253用软件产生一次性中断，最好采用哪种工作方式？现用计数器0对外部脉冲计数，每计满10000个产生一次中断，请写出工作方式控制字及计数初值。</li>
+</ol>
+<p>答：若8253用软件产生一次性中断，最好采用方式0，即计数结束产生中断的工作方式。但若要求每计满10000个脉冲产生一次中断，则表示具有重复中断的功能，因此，此时应使计数器0工作于方式3，即连续方波输出方式。其方式控制字为0011×110B（×表示可以是0或1），计数初值&#x3D;10000。</p>
+<ol start="4">
+<li>8255各端口可以工作在几种方式下？当端口A工作在方式2时，端口B和C工作于什么方式下？</li>
+</ol>
+<p>答：PA可工作于方式0、方式1及方式2三种方式下，PB可工作于方式0或方式1下，PC可工作于方式0或方式1下。当PA工作在方式2时，PB可工作于方式0或方式1，PC的剩余端口只能工作于方式0。</p>
+<h1 id="编程"><a href="#编程" class="headerlink" title="编程"></a><strong>编程</strong></h1><ol>
+<li>下面程序段的功能是求5到50之和，并将结果存放到SUM单元中，请将程序补充完整。</li>
+</ol>
+<p>SUM DW 0</p>
+<p>……</p>
+<p>MOV CX，     &#x3D;&#x3D;46&#x3D;&#x3D;</p>
+<p>MOV BX，      &#x3D;&#x3D;5&#x3D;&#x3D;</p>
+<p>MOV AX，      &#x3D;&#x3D;0&#x3D;&#x3D;</p>
+<p>L1: ADD AX，BX</p>
+<p>INC BX</p>
+<p>&#x3D;&#x3D;LOOP L1&#x3D;&#x3D;      </p>
+<p>MOV &#x3D;&#x3D;SUM&#x3D;&#x3D;      ，AX</p>
+<ol start="2">
+<li>源程序如下：</li>
+</ol>
+<p>​        MOV CX, 9</p>
+<p>​        MOV AL, 01H</p>
+<p>​        MOV SI, 1000H</p>
+<p>NEXT: MOV [SI], AL</p>
+<p>​        INC  SI</p>
+<p>​        SHL  AL, 1</p>
+<p>​        LOOP NEXT</p>
+<p>试问：</p>
+<p>程序执行后有 AL＝ 0(或00H) ；SI＝ 1009H ；CX＝ 0 。</p>
+<p>   程序的功能： 对数据段内1000H～1008H单元置数，依次送入1、2、4、8、16、32、64、128、0（或01H、02H、04H、08H、10H、20H、40H、80H、0）共9个 。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">SHL 逻辑左移。</span><br><span class="line">SAL 算术左移。(=SHL)</span><br><span class="line">SHR 逻辑右移。</span><br><span class="line">SAR 算术右移。(=SHR)</span><br><span class="line">INC +1。</span><br></pre></td></tr></table></figure>
+
+
+
+<ol start="3">
+<li>若接口03F8H的第1位（D1）和第3位（D3）同时为1，表示接口03FBH有准备好的8位数据，当CPU将数据取走后，D1和D3就不再同时为1了。仅当又有数据准备好时再同时为1。</li>
+</ol>
+<p>试编写完整汇编程序，从上述接口读入200字节的数据，并顺序放在DATA开始的地址中。</p>
+ <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">DATAS  SEGMENT</span><br><span class="line">DATA  DB  200</span><br><span class="line">DATAS  ENDS</span><br><span class="line">CODE  SEGMENT</span><br><span class="line">	ASSUME  DS:DATA,  CS:CODE</span><br><span class="line">	START: MOV  AX,  DATAS</span><br><span class="line">	MOV  DS,  AX</span><br><span class="line">	LEA   SI,   DATA</span><br><span class="line">	MOV  CX,  200</span><br><span class="line">	NEXT:	MOV  DX,  03F8H</span><br><span class="line">	IN     AL,  DX</span><br><span class="line">	AND   AL,  0AH	; 判断D1和D3位是否同时为1</span><br><span class="line">	CMP   AL,  0AH</span><br><span class="line">	JNZ    NEXT	; D1和D3位同时为1则读数据，否则等待</span><br><span class="line">	MOV   DX,  03FBH</span><br><span class="line">	IN     AL,  DX</span><br><span class="line">	MOV  [SI],  AL</span><br><span class="line">	INC    SI</span><br><span class="line">	LOOP  NEXT</span><br><span class="line">	MOV  AH, 4CH</span><br><span class="line">	INT  21H</span><br><span class="line">	CODE	ENDS</span><br><span class="line">	END  START</span><br></pre></td></tr></table></figure>
+
+
+
+<ol start="4">
+<li>编写计算斐波那契数列前20个值的程序。斐波那契数列的定义如下：</li>
+</ol>
+<p><img src="https://image.xiaobeo.top/img/202303291402773.png" alt="img"></p>
+<p>试编写完整汇编程序完成该功能。</p>
+ <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">DATA  SEGMENT</span><br><span class="line">	DATA1  DB  0, 1, 18 DUP(?)</span><br><span class="line">	DATA  ENDS</span><br><span class="line">	CODE  SEGMENT</span><br><span class="line">	ASSUME  DS:DATA, CS:CODE</span><br><span class="line">	START:	MOV  AX,  DATA</span><br><span class="line">	MOV  DS,  AX</span><br><span class="line">	LEA   BX,  DATA1</span><br><span class="line">	MOV  CX,  18</span><br><span class="line">	CLC</span><br><span class="line">	NEXT:	XOR  AX,  AX</span><br><span class="line">	MOV  AL,  [BX]</span><br><span class="line">	MOV  DL,  [BX+1]</span><br><span class="line">	ADC  AL,  DL</span><br><span class="line">	MOV  [BX+2], AL</span><br><span class="line">	INC   BX</span><br><span class="line">	LOOP  NEXT</span><br><span class="line">	MOV  AH, 4CH</span><br><span class="line">	INT  21H</span><br><span class="line">	CODE  ENDS</span><br><span class="line">	END  START</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2024/05/04/WEIJI/" data-id="clvrpglqg0000ncq77tol7rh1" data-title="" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2024/05/04/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E4%BD%9C%E4%B8%9A2/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2024/05/04/vr%20%E5%B1%95%E9%A6%86/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/test/">test</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%A4%A7%E4%B8%89/">大三</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E8%AE%B0%E5%BD%95/">记录</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%AC%94%E8%AE%B0/" rel="tag">笔记</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%BB%83%E4%B9%A0/" rel="tag">练习</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%AE%B0%E5%BD%95/" rel="tag">记录</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/%E7%AC%94%E8%AE%B0/" style="font-size: 10px;">笔记</a> <a href="/tags/%E7%BB%83%E4%B9%A0/" style="font-size: 10px;">练习</a> <a href="/tags/%E8%AE%B0%E5%BD%95/" style="font-size: 20px;">记录</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/05/">May 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/06/">June 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/03/">March 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/02/">February 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/07/">July 2022</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2024/05/04/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9B%BE%E5%BD%A2%E5%AD%A6%E5%9F%BA%E7%A1%80%E4%B8%8ECAD%E5%BC%80%E5%8F%91/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2024/05/04/%E8%A5%BF%E7%94%B5%E6%A0%A1%E5%9B%AD%E7%BD%91%E8%BF%9B%E9%98%B6%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8C%97/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2024/05/04/%E7%94%B5%E8%A1%A8%E6%AC%A2%E8%BF%8E2023%E7%BA%A7%E6%96%B0%E7%94%9F%E7%9A%84%E5%88%B0%E6%9D%A5/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2024/05/04/%E7%AE%B1%E4%BD%93%E8%A3%85%E9%85%8D%E5%9B%BE%E6%98%8E%E7%BB%86%E6%A0%8F/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2024/05/04/%E7%94%B5%E8%A1%A8%E6%AC%A2%E8%BF%8E2023%E5%B1%8A%E6%96%B0%E7%94%9F%E7%9A%84%E5%88%B0%E6%9D%A5/">(no title)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2024 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
